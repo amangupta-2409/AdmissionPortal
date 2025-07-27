@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Query</title>
+    <link rel="stylesheet" href="/displayStyle.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <img src="/davvLogo2.png" alt="University Logo" class="logo">
+            <h1>Devi Ahilya Vishwavidyalaya, Indore</h1>
+        </header>
+
+        <div class="course-details">
+            <h2><%= course.name %></h2>
+            <p><strong>College:</strong> <i><%= course.college %></i></p>
+            <p>
+                <%= course.description %>
+            </p>
+
+            <div class="eligibility">
+                <strong>Eligibility:</strong> <%= course.eligibility %>
+            </div>
+
+            <table class="fee-structure">
+                <tr>
+                    <th>Number of Seats</th>
+                    <th>Boy Fees (per annum)</th>
+                    <th>Girl Fees (per annum)</th>
+                </tr>
+                <tr>
+                    <td><%= course.seats %></td>
+                    <td>&#x20B9;<%= course.boyFee[0].toLocaleString("en-IN") %></td>
+                    <td>&#x20B9;<%= course.girlFee[0].toLocaleString("en-IN") %></td>
+                </tr>
+            </table>
+
+            <div class="contact-info">
+                <p><strong>For more details:</strong></p>
+                <p>Email: <a href="mailto:<%= course.email %>"><%= course.email %></a></p>
+                <p>Phone Number: +91<%= course.phone %></p>
+                <p>For more information click here to get detailed brochure : <a href="/DetailedBrochure.pdf"><button id="brochureBtn">get brochure</button></a> </p>
+   
+            </div>
+        </div>
+    </div>
+</body>
+</html>

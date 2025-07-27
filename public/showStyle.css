@@ -1,0 +1,54 @@
+
+
+  header {
+   display: flex;
+   align-items: center;
+   background: navy;
+   color: white;
+   padding: 10px;
+}
+#heading2{
+   color: navy;
+}
+header img {
+   height: 60px;
+   margin-right: 20px;
+}
+#namePara{
+   font-size: large;
+   font-weight: 500;
+}
+.gridContainer {
+display : grid;
+grid-template-rows: auto;
+grid-template-columns: 33% 33% 32%;
+grid-gap : 19px 19px;
+}
+
+.gridBox{
+ border : 1px solid lightgrey;
+ border-radius: 8px;
+ place-items: center;
+ justify-content:center ;
+ box-shadow: 2px 2px 2px lightgrey;
+ 
+}
+.courseLink{
+   color : #222222;
+}
+.courseLink:hover{
+   color : navy;
+}
+.gridBox:hover{
+   background-color: rgb(226, 220, 220);
+}
+
+#brochureBtn{
+   border-radius: 4px;
+   background-color: navy;
+   color : white;
+}
+#brochureBtn:hover{
+   background-color: black;
+   color : white;
+}
